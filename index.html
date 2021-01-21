@@ -6,23 +6,25 @@
     <meta charset="utf-8" />
     <title>reservia</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
   </head>
   <body>
     <!-- NAV NAV NAV NAV -->
-    <nav>
-      <a href="#"
+    <nav class="container_nav">
+      <div class="menu_1"><a href="#"
         ><img id="logo" src="images/logo/Reservia@3x.png" alt="logo_reservia"
-      /></a>
-      <ul id="menu">
-        <li><a href="#hébergements">Hébergements</a></li>
-        <li><a href="#activités">Activités</a></li>
-        <li><a href="#inscription">S'inscrire</a></li>
-      </ul>
+      /></a></div>
+    <div class="menu_1">
+        <div class="menu_li"><a href="#hébergements">Hébergements</a></div>
+        <div class="menu_li"><a href="#activités">Activités</a></div>
+        <div class="menu_li"><a href="#inscription">S'inscrire</a></div>
+      </div>
     </nav>
     <!-- HEADER HEADER HEADER HEADER-->
     <header>
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-      <h3>En plein centre ville ou en pleine nature</h3>
+      <p>En plein centre ville ou en pleine nature</p>
       <div id="search_bar">
         <img
           id="map_marker"
@@ -37,6 +39,7 @@
               name="destination_search"
               size="30"
               placeholder="Marseille, France"
+              
             />
           </p>
         </form>
@@ -86,7 +89,7 @@
       <div class="info">
         <div id="i">i</div>
         <div id="info_text">
-          Plus de 500 logements sont disponibles dans cette ville
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </div>
     </header>
@@ -286,14 +289,14 @@
       <!-- ASIDE ASIDE ASIDE ASIDE-->
 
       <aside id="aside1">
-
+       
         <div id="title_aside"><h1> <a href="#">Les plus populaires</a> </h1>
             <img
               id="logo_chart"
               src="images/logo/chart-line-solid.svg"
               alt="logo_chart"/></div>
             
-            
+            <div class="hotels_aside">
             <div class="ha">
             <div class="ha1">
               <a href="#"
@@ -392,7 +395,7 @@
             src="images/logo/star-solid-grey.svg"
             alt="rating"
           /></div></div>
-        </div>
+        </div></div>
       </aside>
 
       <!-- ARTICLE 2 ARTICLE 2 ARTICLE 2 ARTICLE 2-->
