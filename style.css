@@ -5,6 +5,9 @@
 
 body{
     font-family: "Raleway", Arial, Helvetica, sans-serif;
+   
+    margin: 0;
+    padding: 0;
     }
     
 
@@ -17,21 +20,34 @@ body{
 }
 .menu_1{
     display: flex;
-    width: 500px; 
-   
+    width: 35%; 
+    
+    
 }
 
 
-.menu_li{
+.menu_li, .menu_li1{
     margin-right: 80px;
     margin-top: 15px;
+    padding-top: 10px;
+    border-top: 2px solid transparent;
+    
     
 }
 
 .menu_li a{
     text-decoration: none;
+    color:black;
+    font-weight:normal;
+}
+.menu_li:hover, .menu_li1:hover{
+    border-top: 2px solid #0065FC;
     color: #0065FC;
-    font-weight:600;
+}
+.menu_li1 a{
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: bolder;
 }
  
 #logo{
@@ -64,17 +80,22 @@ input::placeholder{
     
 }
 
-#search_bar{
+.search_bar{
+    width: 400px;
     display: flex;
-    align-items:center;  
+    align-items: center;
+    
+    
+    
 }
 #map_marker{
-    width: 16px;
-    height: 18px;
-    padding:  10px 10px 10px 10px;
+    width: 1em;
+    height: 1em;
+    padding:  11px 11px 11px 11px;
     background-color: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    margin-top: 4px;
 }
 
 #destination_search{
@@ -85,49 +106,56 @@ input::placeholder{
 
 #filters{
     display: flex;
+    height: fit-content;
   }
 
 header h2{
-    margin-right: 40px;
+    margin-right: 0px;
     margin-top: 28px;
     font-size:large;
 }  
 header li{
-    list-style: none;
     display: inline;
-    justify-content: space-between;
+    
 }      
-.filtres_h{
+.filtres_picto{
     text-decoration:none;
     display: inline-block;
-    margin: 0 0px 10px 28px;
-    padding: 10px 20px 10px 50px;
+    margin: 0 20px 10px 28px;
+    padding: 0 20px 0 0;
     border: solid thin #DEEBFF;
     border-radius: 30px;
     font-weight: bolder; 
-    width: fit-content;
-    color: black;  
+    color: black;
+    position: relative; 
+    z-index: 1;
+    width: fit-content; 
 
 }
-.filtres_h:hover{
-    background-color: chocolate;
+.filtres_picto:hover{
+    background-color:#DEEBFF
 }
-button p{
+button{
     color: white;
     font-weight: bold;
-    margin: 0 0 1px 0;
     text-decoration: none;
+    
+    
     
 }
 
 .picto{
-    width: 18px;
-    height: 18px;
+    width: 1.4em;
+    height: 1.4em;
     background-color: #DEEBFF;
     padding: 11px 11px 11px 11px;
-    margin: 5px -62px 0 20px;
+    margin: 0 7px 0 -2px;
     border-radius: 30px;
     vertical-align: -14px;
+    position: relative;
+    z-index: 2;
+    
+    
    
      
 }
@@ -143,8 +171,8 @@ button p{
 
 
 .info{
-    width: 500px;
-    height: 25px;
+    width: 100%;
+    height: fit-content;
     display: flex;
     margin-bottom: 20px;
 }
@@ -161,11 +189,11 @@ button p{
     font-family:sans-serif;
     font-size: small;
     padding: -1px -1px -1px -1px;
-    margin-top: 3px;
+    margin-top: 15px;
     
 }
 #info_text{
-    width: 450px;
+    width: 100%;
     display: flex;
     margin-left: 5px;
     align-items: center;
@@ -175,22 +203,28 @@ button p{
 
 /* SECTION */
 
+
+
 #title{
+    margin-left: 6%;
+    font-size:small;
     position: relative;
-    top: 30px;
-    left: 34px;
+    top: 1em;
 }
 
 #article1{
-    width: 880px;
-    height: 625px;
+    width: 57em;
+    height: fit-content;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
-    margin: 5px 75px 10px 65px;
-    border-radius: 10px;
+    margin:0;
+    padding-top: 1em;
+    border-radius: 15px;
+    margin-left: 4.5em;
     
 }
+
 
 .text_art{
    margin: -15px 0 -20px 10px
@@ -202,8 +236,8 @@ button p{
 }
 
 .hebergement_group{
-    width: 880px;
-    height: 625px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     margin: 0px 0 10px 0;
@@ -212,23 +246,26 @@ button p{
     justify-content: center;
     
     
+    
  }
 
  
 .hotel_pictures{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     margin-bottom: 0px;
 }
 .hébergement{
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 200px;
-    border-radius: 10px ;
+    height: 37%;
+    border-radius: 15px ;
     box-shadow:1px 1px 20px  gray;
-    width: 245px;
+    width: 27%;
     margin: 18px 18px 18px 18px;
+    min-width: 230px;
+    
     
         
 }  
@@ -238,12 +275,9 @@ article a{
 }     
 
 #afficher {
-    margin-left: 50px;
-    margin-bottom: 30px;
-    position: relative;
-    right: 20px;
-    bottom: 15px;
-    font-weight: bold;
+   font-size: bolder;
+   margin-left: 6%;
+   margin-bottom: 2%;
         
 }
     
@@ -258,7 +292,7 @@ article a{
 }
 .hotel_pictures{
     height: 115px;
-    width: 235px;
+    width: 96%;
     object-fit: cover;
     padding: 5px 6px 0 5px;
 
@@ -267,118 +301,94 @@ article h5{
     font-weight: normal;
 }
 /* ASIDE*/
-.ha1{
-    margin-left: 10px;
+
+.chart-picto{ 
+    height: 1em;
+    width: 1em;
+}
+.picture_as{
+    height: 9.9em;
+    width: 9.9em;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 5px 5px 0px 5px;
+
     
 }
-#aside1{
-    background-color:#F2F2F2;
-    height: 625px;
-    width: 425px;
-    border-radius: 10px;
-    margin: 5px 10px 0 -20px;
+.aside{
+    background-color: #f2f2f2;
+    margin-right:4em;
+    padding-top: 0.5em;
+    width: 27em;
+    height: 39em;
+    border-radius: 15px;
+   
+}
+.aside_hotels{
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    height: 80%;
+    align-items: center;
+    margin-top: 1.8em;
+
+   
 }
-.ha{
-    background-color: white;
-    width: 344px;
-    height: 143px;
-    border-radius: 10px;
+.card_a{
     display: flex;
-    box-shadow: 2px 2px 20px grey;
-    margin-top: 40px;
-     
-    
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 1em;
+    width: 85%;
+    height: 10.5em
 }
-.hotels_aside{
-   height: 600px;
-   width: 425px;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   align-content: flex-end;
-   padding-bottom: 30px;   
-
-}
-
-#logo_chart{
-    width: 1em;
-    height: 1em;
-    margin: 20px 20px 0 0;
-
-
-}
-aside h5{
-    font-weight:normal;
-}
-#title_aside{
+.aside_title{
     display: flex;
     justify-content: space-between;
-    margin: 0px 20px 0 35px; 
+    font-size: 1.22em;
     position: relative;
-    bottom: -35px;
-       
-       
+    top: 0.5em;
+    margin: 1em 1.5em 1em 1.5em;
+
 }
-.rating{
-    margin-top: 15px;
-    margin-left: 8px;
-}
-#text_aside{
+.card_legend{
+    margin-left: 0.5em;
    
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    height: 100px;
-    margin-left: 10px;
-    
-}
-.info_hotel_aside{
-    height: 45px;
-    
-}
-aside a{
-    text-decoration: none;
-    color: black;
-}
-.text_a{
-    margin: 5px 0 10px 15px;
 }
 
-
-.hotel_pictures_aside{
-    height: 132px;
-    width: 126px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin: 5px 0 0 -5px;
-    object-fit: cover;
+.stars_a{
+    margin-top: 2em;
+    margin-left: -0.6em;
 }
+
 
 /* ARTICLE 2 ARTICLE2 ARTICLE2  ARTICLE2 */
 
 .title_a2{
     margin-left: 20px;
+    font-size: small;
 }
+
+
 .article2{
-    width: 1400px;
-    height: 600px;
-    margin: 40px 0 0 50px;
+    width: fit-content;
+    height: 38em;
+    margin: 2em 0 0 4.5em;
+    padding:0;
     display: flex;
     flex-direction: column;
-   
+    
+    
 }
 
 .container_a2{
-    width: 1400px;
+    width: 98%;
     height: 550px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
     padding-left: 10px;
+    
     
     
 }
@@ -426,9 +436,12 @@ aside a{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px; 
 }
-#section{
+.section{
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding:0; 
+    justify-content: space-between;      
 }
 .act{
     border-radius: 15px;
@@ -445,7 +458,7 @@ aside a{
 /* FOOTER FOOTER FOOTER FOOTER */ 
 
 .footer{
-    width: 1480px;
+    width: 100%;
     height: 300px;
     margin: 70px 0 0 0;
     padding-left: 20px;
@@ -475,4 +488,53 @@ li{
 footer a{
     text-decoration: none;
     color: black;
+}
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (max-width: 768px) {
+
+   section{
+       padding: 0
+   }
+     
+    .container_nav{
+        justify-content: left;
+    }
+
+    #article1{
+        width:40em; 
+        margin: -1em 0 0 3.5em;
+       
+    }
+    .aside{
+        width: 40em;
+        height: fit-content;
+        margin: auto 0 5em 3.5em;
+    }
+   .article2{
+       margin: 0 45px 20px 35px; 
+       padding:0;
+       height: 90em;
+   }
+    .act{
+        height: fit-content;
+        margin: 20px 0 0 20px;
+        padding: 0;
+    }
+
+  .article2 img{
+      height: 20px;
+      width: 20px;
+    }
+    .box1{
+        order: 2;
+    }
+    .box2{
+        order:1;
+    }
+    .box3{
+        order:3;
+    }
+  
 }
