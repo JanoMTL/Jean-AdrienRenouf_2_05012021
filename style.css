@@ -43,18 +43,21 @@ body{
     text-decoration: none;
     color: black;
     font-weight: normal;
-    padding-top: 1em; 
+    padding-top: 2em; 
     }
 .menu_3 a{
     text-decoration: none;
     color: #0065FC;
     font-weight: bolder;
-    padding-top: 1em;
+    padding-top: 2em;
 }
 .menu_2 h4:hover, .menu_3 h4:hover{
     border-top: 2px solid #0065FC;
-    color: #0065FC;
+    
 }
+.menu_2 a:hover{
+    color: #0065FC;
+ }
 .menu_2 h4, .menu_3 h4{
     border-top: solid 2px transparent;
     padding-top: 0.5em;
@@ -245,7 +248,7 @@ button{
 }
 
 .stars{
-    margin: 5px 0 0 10px;
+    margin: 5px 0 5px 10px;
 }
 
 .hebergement_group{
@@ -257,8 +260,6 @@ button{
     align-content: center;
     padding:0 0 0 0px;
     justify-content: center;
-    
-    
     
  }
 
@@ -277,11 +278,9 @@ button{
     box-shadow:1px 1px 20px  gray;
     width: 27%;
     margin: 18px 18px 18px 18px;
-    min-width: 230px;
-    
-    
-        
+    min-width: 230px;       
 }  
+
 article a{
     text-decoration: none;
     color: black;
@@ -308,8 +307,8 @@ article a{
     width: 96%;
     object-fit: cover;
     padding: 5px 6px 0 5px;
-
 }
+
 article h5{
     font-weight: normal;
 }
@@ -325,9 +324,7 @@ article h5{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 5px 5px 0px 5px;
-    margin-right: 0.5em;
-
-    
+    margin-right: 0.5em;   
 }
 .aside{
     background-color: #f2f2f2;
@@ -336,17 +333,15 @@ article h5{
     width: 27em;
     height: 39em;
     border-radius: 15px;
-   
 }
 .aside_hotels{
     display: flex;
     flex-direction: column;
     height: 80%;
     align-items: center;
-    margin-top: 1.8em;
-
-   
+    margin-top: 1.8em; 
 }
+
 .card_a{
     display: flex;
     background-color: white;
@@ -354,9 +349,9 @@ article h5{
     margin-bottom: 2em;
     width: 85%;
     height: 9.5em;
-    box-shadow:1px 1px 20px  gray;
-    
+    box-shadow:1px 1px 20px  gray;   
 }
+
 .aside_title{
     display: flex;
     justify-content: space-between;
@@ -384,7 +379,6 @@ article h5{
     font-size: small;
 }
 
-
 .article2{
     width:93vw;
     height: 38em;
@@ -392,7 +386,6 @@ article h5{
     padding:0;
     display: flex;
     flex-direction: column;
-   
     
 }
 
@@ -402,10 +395,7 @@ article h5{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: column;
-    margin-left: 1.5em;
-    
-    
+    flex-direction: column;  
     
 }
 
@@ -465,8 +455,7 @@ article h5{
     margin-right: 32px;
     width: 22.5%;
     height: fit-content;
-    
-       
+          
 }
 
 .legend_a2{
@@ -528,7 +517,7 @@ footer a{
         width: 35%;
 
     }
-
+   
     #article1{
         width:40em; 
         margin: -1em 0 0 3.5em;
@@ -559,6 +548,8 @@ footer a{
    .container_a2{
        height: 60em;
        width: 90%;
+       margin-left: 1.4em;
+
        
    }
     .box1{
@@ -600,7 +591,6 @@ footer a{
     .container_nav{
      flex-wrap: wrap;
      justify-content: space-between;
-     border: #0065FC thin solid;
      margin: 0;
      }
      #logo{
@@ -615,6 +605,7 @@ footer a{
         order: 3;
         width: 100%;
         justify-content: space-evenly;
+        
     }
     .menu_3{
         order: 2;
