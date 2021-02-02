@@ -17,43 +17,54 @@ body{
     
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    height: fit-content;
 }
-.menu_1{
+.menu_1 {
+    width: 68%;
+    margin-top: 0.8em;
+}
+
+.menu_2{
     display: flex;
-    width: 35%; 
-    
-    
-}
-
-
-.menu_li, .menu_li1{
-    margin-right: 80px;
-    margin-top: 15px;
-    padding-top: 10px;
-    border-top: 2px solid transparent;
-    
+    justify-content: space-between;
+    width: 16%; 
+    height: 100%;     
     
 }
-
-.menu_li a{
+.menu_3{
+    display: flex;
+    justify-content: space-evenly;
+    width: 16%;
+    height: 100%;
+}
+.menu_2 a {
     text-decoration: none;
-    color:black;
-    font-weight:normal;
-}
-.menu_li:hover, .menu_li1:hover{
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
-}
-.menu_li1 a{
+    color: black;
+    font-weight: normal;
+    padding-top: 1em; 
+    }
+.menu_3 a{
     text-decoration: none;
     color: #0065FC;
     font-weight: bolder;
+    padding-top: 1em;
 }
- 
+.menu_2 h4:hover, .menu_3 h4:hover{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+.menu_2 h4, .menu_3 h4{
+    border-top: solid 2px transparent;
+    padding-top: 0.5em;
+}
+
 #logo{
    height: 3em;
    height: 3em;
-   margin-left: 70px;
+   margin-left: 65px;
+   
 }
 
 
@@ -90,8 +101,8 @@ input::placeholder{
     
 }
 #map_marker{
-    width: 0.9em;
-    height: 0.9em;
+    width: 1em;
+    height: 1em;
     padding:  11px 11px 11px 11px;
     background-color: #F2F2F2;
     border-top-left-radius: 10px;
@@ -507,6 +518,15 @@ footer a{
      
     .container_nav{
         justify-content: left;
+
+    }
+
+    .menu_1{
+        width: 30%;
+    }
+    .menu_2,.menu_3{
+        width: 35%;
+
     }
 
     #article1{
@@ -571,3 +591,87 @@ footer a{
 
  }
 }
+@media (max-width: 480px){
+    body{
+        margin: 0;
+        width: 480px;
+        height: 282em;
+    }
+    .container_nav{
+     flex-wrap: wrap;
+     justify-content: space-between;
+     border: #0065FC thin solid;
+     margin: 0;
+     }
+     #logo{
+         margin: 0 0 0 2em;
+     }
+     
+    .menu_1{
+        order: 1;
+         
+    }
+    .menu_2{
+        order: 3;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .menu_3{
+        order: 2;
+    }
+    header{
+        margin: 0 0 0 0.5em;
+    }
+
+    .aside{
+        width: 100%;
+        border-radius: 0;
+        margin: 0 0 2em 0;
+     
+    }
+    #article1{
+        width: 100%;
+        margin: 2em 0 2em 0;
+        background-color: white;
+    }
+    .hébergement{
+        width: 100%;
+    }
+    .box3{
+        width: 100%;
+        margin: 0;
+        height: 98em;
+    }
+    .article2{
+        width: 100%;
+        margin: 0 0 5em 0;
+        height: fit-content
+        
+        
+        }
+    .act{
+        width: 95%;
+        margin-left: 0.8em;
+        
+    }
+    #vieux_port, #fort_de_pomegues, #iles_du_frioul, #calanques, #notre_dame, #parc_longchamp{
+        width:100%;
+        
+    }
+    .container_a2{
+        width: 99%;
+        flex-wrap: wrap;
+        margin: 0;
+        height: fit-content;
+    }
+    
+    .footer{
+        width:100%;
+        height: fit-content;
+        flex-wrap: wrap;
+        padding-bottom: 3em;
+    }   
+    .foot1{
+        width: 100%;
+    }
+ }
