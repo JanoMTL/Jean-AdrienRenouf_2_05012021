@@ -29,29 +29,32 @@ body{
 .menu_2{
     display: flex;
     justify-content: space-between;
-    width: 16%; 
-    height: 100%;     
+    width: 21%; 
+    height: 100%; 
+    
     
 }
 .menu_3{
     display: flex;
     justify-content: space-evenly;
-    width: 16%;
+    width: 15%;
     height: 100%;
 }
 .menu_2 a {
     text-decoration: none;
     color: black;
     font-weight: normal;
-    padding-top: 2em; 
+    padding: 1.5em; 
+     
     }
 .menu_3 a{
     text-decoration: none;
     color: #0065FC;
     font-weight: bolder;
-    padding-top: 2em;
+    padding: 1.5em;
+    
 }
-.menu_2 h4:hover, .menu_3 h4:hover{
+.menu_2 a:hover, .menu_3 a:hover{
     border-top: 2px solid #0065FC;
     
 }
@@ -59,7 +62,6 @@ body{
     color: #0065FC;
  }
 .menu_2 h4, .menu_3 h4{
-    border-top: solid 2px transparent;
     padding-top: 0.5em;
 }
 
@@ -67,7 +69,8 @@ body{
    height: 3em;
    height: 3em;
    margin-left: 65px;
-   
+   margin-top: 0.8em;
+
 }
 
 
@@ -184,7 +187,11 @@ button{
     border: none;
    
  }
-
+#loupe{
+    height: 1.5em;
+    width: 1.5em;
+    display: none;
+}
 
 .info{
     width: 100%;
@@ -241,6 +248,12 @@ button{
     
 }
 
+.euro{
+    font-weight: bold;
+}
+.price{
+    font-weight: bold;
+}
 
 .text_art{
    margin: -15px 0 -20px 10px
@@ -275,7 +288,7 @@ button{
     flex-direction: column;
     height: 37%;
     border-radius: 15px ;
-    box-shadow:1px 1px 20px  gray;
+    box-shadow:1px 1px 20px #DEEBFF;
     width: 27%;
     margin: 18px 18px 18px 18px;
     min-width: 230px;       
@@ -331,7 +344,7 @@ article h5{
     margin-right:4em;
     padding-top: 0.5em;
     width: 27em;
-    height: 39em;
+    height: 39.5em;
     border-radius: 15px;
 }
 .aside_hotels{
@@ -375,7 +388,6 @@ article h5{
 /* ARTICLE 2 ARTICLE2 ARTICLE2  ARTICLE2 */
 
 .title_a2{
-    margin-left: 20px;
     font-size: small;
 }
 
@@ -465,9 +477,9 @@ article h5{
 /* FOOTER FOOTER FOOTER FOOTER */ 
 
 .footer{
-    width: 100%;
+    width: 98.5%;
     height: 300px;
-    margin: 70px 0 0 0;
+    margin: 0 0 0 0;
     padding-left: 20px;
     background-color: #F2F2F2;
     display: flex; 
@@ -511,25 +523,50 @@ footer a{
     }
 
     .menu_1{
-        width: 30%;
+        width: 35%;
     }
     .menu_2,.menu_3{
-        width: 35%;
+        width: 30%;
 
     }
-   
+  #destination_search{
+      width: 30em;
+      height: 4em;
+  }
+  .search_bar{
+      width: 38em;
+      height: fit-content;
+      margin-left: 3em;
+  }
+  #button_h{
+      height: 4em;
+  }
+  #map_marker{
+      padding: 1.2em 1.2em 1.2em 1.2em;
+  }
     #article1{
         width:40em; 
-        margin: -1em 0 0 3.5em;
+        margin: 0 0 0 4em;
        
+    }
+    .hébergement{
+        width: 40%;
+    }
+    .picture_as{
+        width: 14em;
+        object-fit: cover;
     }
     .aside{
         width: 40em;
         height: fit-content;
-        margin: auto 0 5em 3.5em;
+        margin: auto 4em 5em 0;
+        
+    }
+    .card_legend{
+        margin-left: 2em;
     }
    .article2{
-       margin: 2em 0 0 2.5em;
+       margin: 2em 0 2em 2em;
        padding:0;
        height: 40em;
        width: 40em;
@@ -541,16 +578,18 @@ footer a{
    }
    .act{
        width: 50%;
-       margin-bottom: 2em;
-       margin-left: 0.2em;
+       margin-bottom: 3em;
+       margin-left: 1em;
        
     }
    .container_a2{
        height: 60em;
        width: 90%;
        margin-left: 1.4em;
-
        
+   }
+   .title_a2{
+       margin-left: 3em;
    }
     .box1{
         order: 2;
@@ -582,11 +621,14 @@ footer a{
 
  }
 }
-@media (max-width: 480px){
+/* Small Devices (I-Phone8, 375px)*/
+
+@media (max-width: 375.5px){
     body{
         margin: 0;
-        width: 480px;
-        height: 282em;
+        width: 375px;
+        height: fit-content;
+        border: olive solid thin;
     }
     .container_nav{
      flex-wrap: wrap;
@@ -605,28 +647,96 @@ footer a{
         order: 3;
         width: 100%;
         justify-content: space-evenly;
-        
+
     }
+    .menu_2x{
+       width: 50%;
+       display: flex;
+       justify-content: space-around;
+       border-bottom: #DEEBFF solid;
+       height: 3.8em;
+     }
+     .menu_2x:hover{
+        border-bottom: 2px solid #0065FC;
+     }
     .menu_3{
         order: 2;
     }
+    .menu_2 a:hover, .menu_3 a:hover{
+    
+        border-top: none;
+        
+    }
+    .menu_3 a:hover{
+        border-bottom: 2px solid #0065FC;
+    }
+    .menu_2 a:hover{
+        color: #0065FC;
+     }
+     .menu_2 a, .menu_3 a{
+         padding-bottom: 0.5em;
+     }
+     
     header{
         margin: 0 0 0 0.5em;
+    }
+
+    #rechercher{
+        display: none;
+    }
+    #loupe{
+        display: flex;
+        margin-left: 10px;
+        
+    }
+    #button_h{
+        position: relative;
+        top: 6px;
+        right: 16px;
+    }
+    #destination_search{
+        width: 14em;
+    }
+    #button_h{
+        width: 4em;
+        border-radius: 20px;
+    }
+    .search_bar{ 
+        width: 100%;
+        margin-left: 0.5em;
+    }
+    #map_marker{
+        margin-top: 10px;
     }
 
     .aside{
         width: 100%;
         border-radius: 0;
         margin: 0 0 2em 0;
+        
      
+    }
+    .box2{
+        height: 40em;
+    }
+    .picture_as{
+        width: 8em;
+    }
+    .card_legend{
+        margin: 0;
     }
     #article1{
         width: 100%;
-        margin: 2em 0 2em 0;
+        margin: 0 0 2em 0;
         background-color: white;
+        height: auto;
+    }
+    .box1{
+        border: green thin solid;
+        height: 100em;
     }
     .hébergement{
-        width: 100%;
+        width: 85%;
     }
     .box3{
         width: 100%;
@@ -636,13 +746,15 @@ footer a{
     .article2{
         width: 100%;
         margin: 0 0 5em 0;
-        height: fit-content
-        
+        height: 105em;
+        border: green thin solid;
+       
         
         }
     .act{
-        width: 95%;
-        margin-left: 0.8em;
+        width: 88%;
+        margin-left: 1.5em;
+        box-shadow: 1px 1px 20px #DEEBFF
         
     }
     #vieux_port, #fort_de_pomegues, #iles_du_frioul, #calanques, #notre_dame, #parc_longchamp{
@@ -657,10 +769,11 @@ footer a{
     }
     
     .footer{
-        width:100%;
-        height: fit-content;
+        width:95%;
+        height: 45em;
         flex-wrap: wrap;
-        padding-bottom: 3em;
+        border: red thin solid;
+        margin-top: 8em;
     }   
     .foot1{
         width: 100%;
