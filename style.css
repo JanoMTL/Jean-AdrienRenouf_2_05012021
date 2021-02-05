@@ -101,10 +101,7 @@ input::placeholder{
     width: 400px;
     display: flex;
     align-items: center;
-    
-    
-    
-    
+      
 }
 #map_marker{
     width: 1em;
@@ -121,21 +118,41 @@ input::placeholder{
     border-style:solid;
     border-color: #F2F2F2;
     }
-
+.titre_f{
+    margin-right:3em;
+    display: flex;
+    padding-bottom: 1em;
+    
+}
 #filters{
     display: flex;
-    height: fit-content;
+    align-items: center;
+    width: 95%;
   }
 
+.box_f{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+.li1{
+    border: #DEEBFF solid;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 0 20px 0px 0;
+    height: 70%;   
+}
+.li1 a{
+    font-weight: bolder;
+    color: black;
+}
 header h2{
     margin-right: 0px;
     margin-top: 28px;
     font-size:large;
-}  
-header li{
-    display: inline;
     
-}      
+}  
+    
 .filtres_picto{
     text-decoration:none;
     display: inline-block;
@@ -150,7 +167,7 @@ header li{
     width: fit-content; 
 
 }
-.filtres_picto:hover{
+.li1:hover{
     background-color:#DEEBFF
 }
 button{
@@ -163,14 +180,15 @@ button{
 }
 
 .picto{
-    width: 1.4em;
-    height: 1.4em;
+    width: 1.5em;
+    height: 1.5em;
     background-color: #DEEBFF;
-    padding: 11px 11px 11px 11px;
-    margin: 0 7px 0 -2px;
+    padding: 12px 12px 12px 12px;
+    margin-right: 1em;
     border-radius: 30px;
-    vertical-align: -14px;
+    vertical-align: -16px;
     position: relative;
+
     z-index: 2;
         
 }
@@ -510,7 +528,12 @@ footer a{
 
 @media (max-width: 768px) {
 
-   section{
+   body{
+       width: 768px;
+       margin: 0;
+       border: tomato thin solid;
+   }
+    section{
        padding: 0
    }
      
@@ -533,7 +556,7 @@ footer a{
   .search_bar{
       width: 38em;
       height: fit-content;
-      margin-left: 3em;
+      
   }
   #button_h{
       height: 4em;
@@ -541,6 +564,23 @@ footer a{
   #map_marker{
       padding: 1.2em 1.2em 1.2em 1.2em;
   }
+
+  .box_f{
+      
+      flex-wrap: wrap;
+      width: 85%;
+      margin-top: 1em;
+      justify-content: right;
+      
+  }
+  .li1{
+      margin: 0.5em 1em 0.5em 1em;
+  }
+  .titre_f{
+      margin-bottom: 4em;
+    
+  }
+ 
     #article1{
         width:40em; 
         margin: 0 0 0 4em;
@@ -556,7 +596,7 @@ footer a{
     .aside{
         width: 40em;
         height: fit-content;
-        margin: auto 4em 5em 0;
+        margin: auto 0 5em 04em;
         
     }
     .card_legend{
@@ -608,7 +648,7 @@ footer a{
      justify-content:space-evenly;
      margin: 0;
      margin-top: 2em;
-     width: 100%;
+     width: 755px;
      
  }   
  .foot1{
@@ -623,7 +663,8 @@ footer a{
 @media (max-width: 375.5px){
     body{
         margin: 0;
-        width: 373px;
+        padding: 0;
+        width: 375px;
         height: fit-content;
         border: olive solid thin;
     }
@@ -699,22 +740,50 @@ footer a{
         border-radius: 20px;
     }
     .search_bar{ 
-        width: 100%;
-        margin-left: 0.5em;
+        width: 85%;
+        margin-left: 2em;
     }
     #map_marker{
         margin-top: 10px;
     }
-
+    header{
+        margin-left: 1em;
+        padding: 0;
+    }
+    #filters{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        width: 100%;
+        
+    }
+    .li1{
+        margin: 0.5em 6px 0.5em 0;
+        
+    }
+    .info{
+        width: 98%;
+        margin: 0;
+    }
+    .titre_f{
+        width: 100%;
+        margin: 0;
+    }
+    .box_f{
+        margin: 0;
+        width: 100%;
+        display: flex;
+    }
+  
     .aside{
         width: 100%;
         border-radius: 0;
         margin: 0 0 2em 0;
-        
-     
+            
     }
     .box2{
         height: 40em;
+        
     }
     .picture_as{
         width: 8em;
@@ -743,10 +812,7 @@ footer a{
         width: 100%;
         margin: 0 0 5em 0;
         height: 96em;
-        
-       
-        
-        }
+     }
     .act{
         width: 88%;
         margin: 0 0 1.5em 1.5em;
