@@ -5,7 +5,6 @@
 
 body{
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-   
     margin: 0;
     padding: 0;
     }
@@ -531,7 +530,7 @@ footer a{
    body{
        width: 768px;
        margin: 0;
-       border: tomato thin solid;
+    
    }
     section{
        padding: 0
@@ -666,7 +665,6 @@ footer a{
         padding: 0;
         width: 375px;
         height: fit-content;
-        border: olive solid thin;
     }
     .container_nav{
      flex-wrap: wrap;
