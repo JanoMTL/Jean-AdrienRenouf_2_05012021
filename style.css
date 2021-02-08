@@ -1,854 +1,804 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap");
 
 /* BODY */
 
-body{
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    }
-    
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
 /* NAV */
 
-.container_nav{
-    
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    width: 100%;
-    height: fit-content;
+.container_nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  height: fit-content;
 }
 .menu_1 {
-    width: 68%;
-    margin-top: 0.8em;
+  width: 68%;
+  margin-top: 0.8em;
 }
 
-.menu_2{
-    display: flex;
-    justify-content: space-between;
-    width: 21%; 
-    height: 100%; 
-    
-    
+.menu_2 {
+  display: flex;
+  justify-content: space-between;
+  width: 21%;
+  height: 100%;
 }
-.menu_3{
-    display: flex;
-    justify-content: space-evenly;
-    width: 15%;
-    height: 100%;
+.menu_3 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 15%;
+  height: 100%;
 }
 .menu_2 a {
-    text-decoration: none;
-    color: black;
-    font-weight: normal;
-    padding: 1.5em; 
-     
-    }
-.menu_3 a{
-    text-decoration: none;
-    color: #0065FC;
-    font-weight: bolder;
-    padding: 1.5em;
-    
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  padding: 1.5em;
 }
-.menu_2 a:hover, .menu_3 a:hover{
-    border-top: 2px solid #0065FC;
-    
+.menu_3 a {
+  text-decoration: none;
+  color: #0065fc;
+  font-weight: bolder;
+  padding: 1.5em;
 }
-.menu_2 a:hover{
-    color: #0065FC;
- }
-.menu_2 h4, .menu_3 h4{
-    padding-top: 0.5em;
+.menu_2 a:hover,
+.menu_3 a:hover {
+  border-top: 2px solid #0065fc;
 }
-
-#logo{
-   height: 3em;
-   height: 3em;
-   margin-left: 65px;
-   margin-top: 0.8em;
-
+.menu_2 a:hover {
+  color: #0065fc;
+}
+.menu_2 h4,
+.menu_3 h4 {
+  padding-top: 0.5em;
 }
 
+#logo {
+  height: 3em;
+  height: 3em;
+  margin-left: 65px;
+  margin-top: 0.8em;
+}
 
 /* HEADER */
 
-header{
-    padding: 0 2em;
-    margin: 0 0 0 40px;
+header {
+  padding: 0 2em;
+  margin: 0 0 0 40px;
 }
-header h1{
-    font-size:larger;
-    font-weight: 700;
+header h1 {
+  font-size: larger;
+  font-weight: 700;
 }
-header p{
-    font-size:medium;
-    font-weight:lighter;
+header p {
+  font-size: medium;
+  font-weight: lighter;
 }
-header a{
-    text-decoration: none;
+header a {
+  text-decoration: none;
 }
-input::placeholder{
-    font-weight:bold ;
-    color: black;
-    
-}
-
-.search_bar{
-    width: 400px;
-    display: flex;
-    align-items: center;
-      
-}
-#map_marker{
-    width: 1em;
-    height: 1em;
-    padding:  11px 11px 11px 11px;
-    background-color: #F2F2F2;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-top: 4px;
+input::placeholder {
+  font-weight: bold;
+  color: black;
 }
 
-#destination_search{
-    padding:  9px 9px 9px 9px;
-    border-style:solid;
-    border-color: #F2F2F2;
-    }
-.titre_f{
-    margin-right:3em;
-    display: flex;
-    padding-bottom: 1em;
-    
+.search_bar {
+  width: 400px;
+  display: flex;
+  align-items: center;
 }
-#filters{
-    display: flex;
-    align-items: center;
-    width: 95%;
-  }
-
-.box_f{
-    display: flex;
-    width: 65%;
-    justify-content: space-between;
-}
-.li1{
-    border: #DEEBFF solid;
-    border-radius: 30px;
-    width: fit-content;
-    padding: 0 20px 0px 0;
-    height: 70%;   
-}
-.li1 a{
-    font-weight: bolder;
-    color: black;
-}
-header h2{
-    margin-right: 0px;
-    margin-top: 28px;
-    font-size:large;
-    
-}  
-    
-.filtres_picto{
-    text-decoration:none;
-    display: inline-block;
-    margin: 0 20px 10px 28px;
-    padding: 0 20px 0 0;
-    border: solid thin #DEEBFF;
-    border-radius: 30px;
-    font-weight: bolder; 
-    color: black;
-    position: relative; 
-    z-index: 1;
-    width: fit-content; 
-
-}
-.li1:hover{
-    background-color:#DEEBFF
-}
-button{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    margin-left: -5px;
-  
-    
+#map_marker {
+  width: 1em;
+  height: 1em;
+  padding: 11px 11px 11px 11px;
+  background-color: #f2f2f2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 4px;
 }
 
-.picto{
-    width: 1.5em;
-    height: 1.5em;
-    background-color: #DEEBFF;
-    padding: 12px 12px 12px 12px;
-    margin-right: 1em;
-    border-radius: 30px;
-    vertical-align: -16px;
-    position: relative;
-
-    z-index: 2;
-        
+#destination_search {
+  padding: 9px 9px 9px 9px;
+  border-style: solid;
+  border-color: #f2f2f2;
 }
-.filtres_h{
-    position: relative;
-    bottom: 2px;
+.titre_f {
+  margin-right: 3em;
+  display: flex;
+  padding-bottom: 1em;
 }
-#button_h{
-    height: 37px;
-    width: 8em;
-    background-color: #0065FC;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    border: none;
-   
- }
-#loupe{
-    height: 1.5em;
-    width: 1.5em;
-    display: none;
+#filters {
+  display: flex;
+  align-items: center;
+  width: 95%;
 }
 
-.info{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    margin-bottom: 20px;
+.box_f {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
 }
-#i{
-    border: solid #DEEBFF thin;
-    width: 18px;
-    height: 18px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #0065FC;
-    font-weight:bolder;
-    font-family:sans-serif;
-    font-size: small;
-    margin-top: 15px;
-    
+.li1 {
+  border: #deebff solid;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 0 20px 0px 0;
+  height: 70%;
 }
-#info_text{
-    width: 100%;
-    display: flex;
-    margin-left: 5px;
-    align-items: center;
-    font-weight:normal;
-   
+.li1 a {
+  font-weight: bolder;
+  color: black;
+}
+header h2 {
+  margin-right: 0px;
+  margin-top: 28px;
+  font-size: large;
+}
+
+.filtres_picto {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 20px 10px 28px;
+  padding: 0 20px 0 0;
+  border: solid thin #deebff;
+  border-radius: 30px;
+  font-weight: bolder;
+  color: black;
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+}
+.li1:hover {
+  background-color: #deebff;
+}
+button {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: -5px;
+}
+
+.picto {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: #deebff;
+  padding: 12px 12px 12px 12px;
+  margin-right: 1em;
+  border-radius: 30px;
+  vertical-align: -16px;
+  position: relative;
+
+  z-index: 2;
+}
+.filtres_h {
+  position: relative;
+  bottom: 2px;
+}
+#button_h {
+  height: 37px;
+  width: 8em;
+  background-color: #0065fc;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border: none;
+}
+#loupe {
+  height: 1.5em;
+  width: 1.5em;
+  display: none;
+}
+
+.info {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  margin-bottom: 20px;
+}
+#i {
+  border: solid #deebff thin;
+  width: 18px;
+  height: 18px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0065fc;
+  font-weight: bolder;
+  font-family: sans-serif;
+  font-size: small;
+  margin-top: 15px;
+}
+#info_text {
+  width: 100%;
+  display: flex;
+  margin-left: 5px;
+  align-items: center;
+  font-weight: normal;
 }
 
 /* SECTION */
 
-
-
-#title{
-    margin-left: 6%;
-    font-size:small;
-    position: relative;
-    top: 1em;
+#title {
+  margin-left: 6%;
+  font-size: small;
+  position: relative;
+  top: 1em;
 }
 
-#article1{
-    width: 57em;
-    height: fit-content;
-    background-color: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    margin:0;
-    padding-top: 1em;
-    border-radius: 15px;
-    margin-left: 4.5em;
-    
+#article1 {
+  width: 57em;
+  height: fit-content;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-top: 1em;
+  border-radius: 15px;
+  margin-left: 4.5em;
 }
 
-.euro{
-    font-weight: bold;
+.euro {
+  font-weight: bold;
 }
-.price{
-    font-weight: bold;
-}
-
-.text_art{
-   margin: -15px 0 -20px 10px
-   
+.price {
+  font-weight: bold;
 }
 
-.stars{
-    margin: 5px 0 5px 10px;
+.text_art {
+  margin: -15px 0 -20px 10px;
 }
 
-.hebergement_group{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px 0 10px 0;
-    align-content: center;
-    padding:0 0 0 0px;
-    justify-content: center;
-    
- }
-
- 
-.hotel_pictures{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    margin-bottom: 0px;
+.stars {
+  margin: 5px 0 5px 10px;
 }
-.hébergement{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    height: 37%;
-    border-radius: 15px ;
-    box-shadow:1px 1px 20px #DEEBFF;
-    width: 27%;
-    margin: 18px 18px 18px 18px;
-    min-width: 230px;       
-}  
 
-article a{
-    text-decoration: none;
-    color: black;
-}     
+.hebergement_group {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 0 10px 0;
+  align-content: center;
+  padding: 0 0 0 0px;
+  justify-content: center;
+}
+
+.hotel_pictures {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 0px;
+}
+.hébergement {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 37%;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px #deebff;
+  width: 27%;
+  margin: 18px 18px 18px 18px;
+  min-width: 230px;
+}
+
+article a {
+  text-decoration: none;
+  color: black;
+}
 
 #afficher {
-   margin-left: 6%;
-   margin-bottom: 2%;
-        
-}
-    
-.colored_star{
-    width: 1em;
-    height: 1em;
-    fill:blue
-}
-.grey_star{
-    width: 1em;
-    height: 1em;
-}
-.hotel_pictures{
-    height: 115px;
-    width: 96%;
-    object-fit: cover;
-    padding: 5px 6px 0 5px;
+  margin-left: 6%;
+  margin-bottom: 2%;
 }
 
-article h5{
-    font-weight: normal;
+.colored_star {
+  width: 1em;
+  height: 1em;
+  fill: blue;
+}
+.grey_star {
+  width: 1em;
+  height: 1em;
+}
+.hotel_pictures {
+  height: 115px;
+  width: 96%;
+  object-fit: cover;
+  padding: 5px 6px 0 5px;
+}
+
+article h5 {
+  font-weight: normal;
 }
 /* ASIDE*/
 
-.chart-picto{ 
-    height: 1em;
-    width: 1em;
+.chart-picto {
+  height: 1em;
+  width: 1em;
 }
-.picture_as{
-    height: 8.8em;
-    width: 8.8em;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding: 5px 5px 0px 5px;
-    margin-right: 0.5em;   
+.picture_as {
+  height: 8.8em;
+  width: 8.8em;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 5px 5px 0px 5px;
+  margin-right: 0.5em;
 }
-.aside{
-    background-color: #f2f2f2;
-    margin-right:4em;
-    padding-top: 0.5em;
-    width: 27em;
-    height: 39.5em;
-    border-radius: 15px;
+.aside {
+  background-color: #f2f2f2;
+  margin-right: 4em;
+  padding-top: 0.5em;
+  width: 27em;
+  height: 39.5em;
+  border-radius: 15px;
 }
-.aside_hotels{
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    align-items: center;
-    margin-top: 1.8em; 
-}
-
-.card_a{
-    display: flex;
-    background-color: white;
-    border-radius: 15px;
-    margin-bottom: 2em;
-    width: 85%;
-    height: 9.5em;
-    box-shadow:1px 1px 20px  gray;   
+.aside_hotels {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  align-items: center;
+  margin-top: 1.8em;
 }
 
-.aside_title{
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.22em;
-    position: relative;
-    top: 0.5em;
-    margin: 1em 1.5em 1em 1.5em;
-
-}
-.card_legend{
-    margin-left: 0.5em;
-   
+.card_a {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 2em;
+  width: 85%;
+  height: 9.5em;
+  box-shadow: 1px 1px 20px gray;
 }
 
-.stars_a{
-    margin-top: 1.5em;
-    margin-left: -0.6em;
+.aside_title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.22em;
+  position: relative;
+  top: 0.5em;
+  margin: 1em 1.5em 1em 1.5em;
+}
+.card_legend {
+  margin-left: 0.5em;
 }
 
+.stars_a {
+  margin-top: 1.5em;
+  margin-left: -0.6em;
+}
 
 /* ARTICLE 2 ARTICLE2 ARTICLE2  ARTICLE2 */
 
-.title_a2{
-    font-size: small;
+.title_a2 {
+  font-size: small;
 }
 
-.article2{
-    width:93vw;
-    height: 38em;
-    margin: 2em 0 0 4.5em;
-    padding:0;
-    display: flex;
-    flex-direction: column;
-    
+.article2 {
+  width: 93vw;
+  height: 38em;
+  margin: 2em 0 0 4.5em;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.container_a2{
-    width: 99%;
-    height: 84.5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;  
-    
+.container_a2 {
+  width: 99%;
+  height: 84.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-#vieux_port{
-    height: 28em;
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;   
+#vieux_port {
+  height: 28em;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-#fort_de_pomegues{
-    height: 12em;
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;    
+#fort_de_pomegues {
+  height: 12em;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-#iles_du_frioul{   
-    height: 9em;
-    width: 100%;
-    object-fit: cover; 
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-       
+#iles_du_frioul {
+  height: 9em;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-#calanques{
-    height: 28em;
-    width: 100%;
-    object-fit: cover; 
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px; 
+#calanques {
+  height: 28em;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-#notre_dame{
-    height: 10.5em;
-    width: 100%;
-    object-fit: cover; 
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px; 
+#notre_dame {
+  height: 10.5em;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-#parc_longchamp{
-    height: 10.5em;
-    width: 100%;
-    object-fit: cover; 
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px; 
+#parc_longchamp {
+  height: 10.5em;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-.section{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding:0; 
-    justify-content: space-between;      
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
 }
-.act{
-    border-radius: 15px;
-    box-shadow: 1px 1px 10px grey;
-    margin-right: 32px;
-    width: 22.5%;
-    height: fit-content;
-          
+.act {
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px grey;
+  margin-right: 32px;
+  width: 22.5%;
+  height: fit-content;
 }
 
-.legend_a2{
-    margin-left: 20px;
-    font-weight: bold;
+.legend_a2 {
+  margin-left: 20px;
+  font-weight: bold;
 }
-/* FOOTER FOOTER FOOTER FOOTER */ 
+/* FOOTER FOOTER FOOTER FOOTER */
 
-.footer{
-    width: 98.5%;
-    height: 300px;
-    margin: 0 0 0 0;
-    padding-left: 20px;
-    background-color: #F2F2F2;
-    display: flex; 
-    align-content: flex-start;
-    
+.footer {
+  width: 98.5%;
+  height: 300px;
+  margin: 0 0 0 0;
+  padding-left: 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  align-content: flex-start;
 }
 
-.foot1{
-    margin: 20px 220px 0 50px;
-    display: flex;
-    flex-direction: column ;
-    padding-top: 30px;
-
-    
+.foot1 {
+  margin: 20px 220px 0 50px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
 }
-ul{
-    margin-left: -40px;
+ul {
+  margin-left: -40px;
 }
-li{
-    list-style: none;
-    margin-bottom: 20px;
-
+li {
+  list-style: none;
+  margin-bottom: 20px;
 }
-footer a{
-    text-decoration: none;
-    color: black;
+footer a {
+  text-decoration: none;
+  color: black;
 }
 
 /* Medium devices (tablets, 768px and up)*/
 
 @media (max-width: 768px) {
+  body {
+    width: 768px;
+    margin: 0;
+  }
+  section {
+    padding: 0;
+  }
 
-   body{
-       width: 768px;
-       margin: 0;
+  .container_nav {
+    justify-content: left;
+  }
+
+  .menu_1 {
+    width: 35%;
+  }
+  .menu_2,
+  .menu_3 {
+    width: 30%;
+  }
+  #destination_search {
+    width: 30em;
+    height: 4em;
+  }
+  .search_bar {
+    width: 38em;
+    height: fit-content;
+  }
+  #button_h {
+    height: 4em;
+  }
+  #map_marker {
+    padding: 1.2em 1.2em 1.2em 1.2em;
+  }
+
+  .box_f {
+    flex-wrap: wrap;
+    width: 85%;
+    margin-top: 1em;
+    justify-content: left;
+  }
+  .li1 {
+    margin: 0.5em 1em 0.5em 1em;
+  }
+  .titre_f {
+    margin-bottom: 4em;
+  }
+
+  #article1 {
+    width: 40em;
+    margin: 0 0 0 4em;
+  }
+  .hébergement {
+    width: 40%;
+  }
+  .picture_as {
+    width: 14em;
+    object-fit: cover;
+  }
+  .aside {
+    width: 40em;
+    height: fit-content;
+    margin: auto 0 5em 04em;
+  }
+  .card_legend {
+    margin-left: 2em;
+  }
+  .article2 {
+    margin: 2em 0 0em 2em;
+    padding: 0;
+    height: 45em;
+    width: 40em;
     
-   }
-    section{
-       padding: 0
-   }
-     
-    .container_nav{
-        justify-content: left;
-
-    }
-
-    .menu_1{
-        width: 35%;
-    }
-    .menu_2,.menu_3{
-        width: 30%;
-
-    }
-  #destination_search{
-      width: 30em;
-      height: 4em;
   }
-  .search_bar{
-      width: 38em;
-      height: fit-content;
-      
+  #vieux_port,
+  #fort_de_pomegues,
+  #iles_du_frioul,
+  #calanques,
+  #notre_dame,
+  #parc_longchamp {
+    height: 10em;
+    width: 18em;
   }
-  #button_h{
-      height: 4em;
+  .act {
+    width: 50%;
+    margin-bottom: 3em;
+    margin-left: 1em;
   }
-  #map_marker{
-      padding: 1.2em 1.2em 1.2em 1.2em;
+  .container_a2 {
+    height: 54em;
+    width: 90%;
+    margin-left:1.4em;
+    justify-content: start;
   }
-
-  .box_f{
-      
-      flex-wrap: wrap;
-      width: 85%;
-      margin-top: 1em;
-      justify-content: right;
-      
+  .title_a2 {
+    margin-left: 3em;
   }
-  .li1{
-      margin: 0.5em 1em 0.5em 1em;
+  .box1 {
+    order: 2;
   }
-  .titre_f{
-      margin-bottom: 4em;
-    
+  .box2 {
+    order: 1;
   }
- 
-    #article1{
-        width:40em; 
-        margin: 0 0 0 4em;
-       
-    }
-    .hébergement{
-        width: 40%;
-    }
-    .picture_as{
-        width: 14em;
-        object-fit: cover;
-    }
-    .aside{
-        width: 40em;
-        height: fit-content;
-        margin: auto 0 5em 04em;
-        
-    }
-    .card_legend{
-        margin-left: 2em;
-    }
-   .article2{
-       margin: 2em 0 2em 2em;
-       padding:0;
-       height: 40em;
-       width: 40em;
-       
-   }
-   #vieux_port, #fort_de_pomegues, #iles_du_frioul, #calanques, #notre_dame, #parc_longchamp{
-       height: 10em;
-       width: 18em;
-   }
-   .act{
-       width: 50%;
-       margin-bottom: 3em;
-       margin-left: 1em;
-       
-    }
-   .container_a2{
-       height: 60em;
-       width: 90%;
-       margin-left: 1.4em;
-       
-   }
-   .title_a2{
-       margin-left: 3em;
-   }
-    .box1{
-        order: 2;
-    }
-    .box2{
-        order:1;
-    }
-    .box3{
-        order:3;
-    }
-    .picture_a2{
-        height: 4em;
-        width: 4em;
-    }
-    .box3{
-        margin-bottom: 10em;
-    }
- .footer{
-     justify-content:space-evenly;
-     margin: 0;
-     margin-top: 2em;
-     width: 745px;
-     
- }   
- .foot1{
-     margin: 0;
-     margin-right: 2em;
-     width: 20%;
-
- }
+  .box3 {
+    order: 3;
+  }
+  .picture_a2 {
+    height: 4em;
+    width: 4em;
+  }
+  .box3 {
+    margin-bottom: 10em;
+  }
+  .footer {
+    justify-content: space-evenly;
+    margin: 0;
+    width: 97.3%;
+  }
+  .foot1 {
+    margin: 0;
+    margin-right: 2em;
+    width: 20%;
+  }
 }
 /* Small Devices (I-Phone8, 375px)*/
 
-@media (max-width: 375.5px){
-    body{
-        margin: 0;
-        padding: 0;
-        width: 375px;
-        height: fit-content;
-    }
-    .container_nav{
-     flex-wrap: wrap;
-     justify-content: space-between;
-     margin: 0;
-     }
-     #logo{
-         margin: 0 0 0 2em;
-     }
-     
-    .menu_1{
-        order: 1;
-         
-    }
-    .menu_2{
-        order: 3;
-        width: 100%;
-        justify-content: space-evenly;
+@media (max-width: 375.5px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 375px;
+    height: fit-content;
+  }
+  .container_nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+  }
+  #logo {
+    margin: 0 0 0 2em;
+  }
+  .menu_1 {
+    order: 1;
+  }
+  .menu_2 {
+    order: 3;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .menu_2x {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: #deebff solid;
+    height: 3.8em;
+  }
+  .menu_2x:hover {
+    border-bottom: 2px solid #0065fc;
+  }
+  .menu_3 {
+    order: 2;
+  }
+  .menu_2 a:hover,
+  .menu_3 a:hover {
+    border-top: none;
+  }
+  .menu_3 a:hover {
+    border-bottom: 2px solid #0065fc;
+  }
+  .menu_2 a:hover {
+    color: #0065fc;
+  }
+  .menu_2 a,
+  .menu_3 a {
+    padding-bottom: 0.5em;
+  }
 
-    }
-    .menu_2x{
-       width: 50%;
-       display: flex;
-       justify-content: space-around;
-       border-bottom: #DEEBFF solid;
-       height: 3.8em;
-     }
-     .menu_2x:hover{
-        border-bottom: 2px solid #0065FC;
-     }
-    .menu_3{
-        order: 2;
-    }
-    .menu_2 a:hover, .menu_3 a:hover{
-    
-        border-top: none;
-        
-    }
-    .menu_3 a:hover{
-        border-bottom: 2px solid #0065FC;
-    }
-    .menu_2 a:hover{
-        color: #0065FC;
-     }
-     .menu_2 a, .menu_3 a{
-         padding-bottom: 0.5em;
-     }
-     
-    header{
-        margin: 0 0 0 0.5em;
-    }
+  header {
+    margin: 0 0 0 0.5em;
+  }
 
-    #rechercher{
-        display: none;
-    }
-    #loupe{
-        display: flex;
-        margin-left: 10px;
-        
-    }
-    #button_h{
-        position: relative;
-        top: 6px;
-        right: 16px;
-    }
-    #destination_search{
-        width: 14em;
-    }
-    #button_h{
-        width: 4em;
-        border-radius: 20px;
-    }
-    .search_bar{ 
-        width: 85%;
-        margin-left: 2em;
-    }
-    #map_marker{
-        margin-top: 10px;
-    }
-    header{
-        margin-left: 1em;
-        padding: 0;
-    }
-    #filters{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-        width: 100%;
-        
-    }
-    .li1{
-        margin: 0.5em 6px 0.5em 0;
-        
-    }
-    .info{
-        width: 98%;
-        margin: 0;
-    }
-    .titre_f{
-        width: 100%;
-        margin: 0;
-    }
-    .box_f{
-        margin: 0;
-        width: 100%;
-        display: flex;
-    }
-  
-    .aside{
-        width: 100%;
-        border-radius: 0;
-        margin: 0 0 2em 0;
-            
-    }
-    .box2{
-        height: 40em;
-        
-    }
-    .picture_as{
-        width: 8em;
-    }
-    .card_legend{
-        margin: 0;
-    }
-    #article1{
-        width: 100%;
-        margin: 0 0 2em 0;
-        background-color: white;
-        height: auto;
-    }
-    .box1{
-        height: 100em;
-    }
-    .hébergement{
-        width: 85%;
-    }
-    .box3{
-        width: 100%;
-        margin: 0;
-        height: 90em;
-    }
-    .article2{
-        width: 100%;
-        margin: 0 0 5em 0;
-        height: 96em;
-     }
-    .act{
-        width: 88%;
-        margin: 0 0 1.5em 1.5em;
-        box-shadow: 1px 1px 20px #DEEBFF
-        
-    }
-    #vieux_port, #fort_de_pomegues, #iles_du_frioul, #calanques, #notre_dame, #parc_longchamp{
-        width:100%;
-        
-    }
-    .container_a2{
-        width: 99%;
-        flex-wrap: wrap;
-        margin: 0;
-        height: fit-content;
-    }
+  #rechercher {
+    display: none;
+  }
+  #loupe {
+    display: flex;
+    margin-left: 10px;
+  }
+  #button_h {
+    position: relative;
+    top: 6px;
+    right: 16px;
+  }
+  #destination_search {
+    width: 14em;
+  }
+  #button_h {
+    width: 4em;
+    border-radius: 20px;
+  }
+  .search_bar {
+    width: 85%;
+    margin-left: 2em;
+  }
+  #map_marker {
+    margin-top: 10px;
+  }
+  header {
+    margin-left: 1em;
+    padding: 0;
+  }
+  #filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+  }
+  .li1 {
+    margin: 0.5em 6px 0.5em 0;
+  }
+  .info {
+    width: 98%;
+    margin: 0;
+  }
+  .titre_f {
+    width: 100%;
+    margin: 0;
+  }
+  .box_f {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+  }
+
+  .aside {
+    width: 100%;
+    border-radius: 0;
+    margin: 0 0 2em 0;
+  }
+  .box2 {
+    height: 40em;
+  }
+  .picture_as {
+    width: 8em;
+  }
+  .card_legend {
+    margin: 0;
+  }
+  #article1 {
+    width: 100%;
+    margin: 0 0 2em 0;
+    background-color: white;
+    height: auto;
+  }
+  .box1 {
+    height: 100em;
+  }
+  .hébergement {
+    width: 85%;
+  }
+  .box3 {
+    width: 100%;
+    margin: 0;
+    height: 90em;
+  }
+  .article2 {
+    width: 100%;
+    margin: 0 0 5em 0;
+    height: 96em;
+   
+  }
+  .act {
+    width: 88%;
+    margin: 0 0 1.5em 1.5em;
+    box-shadow: 1px 1px 20px #deebff;
+  }
+  #vieux_port,
+  #fort_de_pomegues,
+  #iles_du_frioul,
+  #calanques,
+  #notre_dame,
+  #parc_longchamp {
+    width: 100%;
+  }
+  .container_a2 {
+    width: 99%;
+    margin: 0;
+    height: 150em;
     
-    .footer{
-        width:94%;
-        height: 28em;
-        flex-wrap: wrap;
-        margin-top: 8em;
-    }   
-    .foot1{
-        width: 100%;
-        align-content: flex-start;
-        height: 25%;
-        margin: 0;
-        
-    }
-    .foot2{
-        margin: 0;
-    }
-    .foot2 h3{
-        margin: 0;
-    }
-    .foot2 li{
-        margin: 10px 0 10px 0;
-        
-    }
- }
+  }
+
+  .footer {
+    width: 95%;
+    height: 28em;
+    flex-wrap: wrap;
+    margin-top: 8em;
+  }
+  .foot1 {
+    width: 100%;
+    align-content: flex-start;
+    height: 25%;
+    margin: 0;
+  }
+  .foot2 {
+    margin: 0;
+  }
+  .foot2 h3 {
+    margin: 0;
+  }
+  .foot2 li {
+    margin: 10px 0 10px 0;
+  }
+}
