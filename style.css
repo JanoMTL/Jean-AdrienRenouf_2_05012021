@@ -38,13 +38,13 @@ body {
   text-decoration: none;
   color: black;
   font-weight: normal;
-  padding: 1.5em;
+  padding: 1.7em;
 }
 .menu_3 a {
   text-decoration: none;
   color: #0065fc;
   font-weight: bolder;
-  padding: 1.5em;
+  padding: 1.7em;
 }
 .menu_2 a:hover,
 .menu_3 a:hover {
@@ -227,19 +227,24 @@ button {
   margin-left: 6%;
   font-size: small;
   position: relative;
-  top: 1em;
+  top: 2em;
+  height: 2px;
+  padding-left: 2.2em;
+  width: 95%;
+  
 }
 
 #article1 {
   width: 57em;
-  height: fit-content;
+  height: 34.7em;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding-top: 1em;
+  padding-top: 4em;
   border-radius: 15px;
   margin-left: 4.5em;
+  
 }
 
 .euro {
@@ -277,7 +282,7 @@ button {
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 37%;
+  height: 42%;
   border-radius: 15px;
   box-shadow: 1px 1px 20px #deebff;
   width: 27%;
@@ -292,7 +297,6 @@ article a {
 
 #afficher {
   margin-left: 6%;
-  margin-bottom: 2%;
 }
 
 .colored_star {
@@ -499,6 +503,7 @@ footer a {
 
   .container_nav {
     justify-content: left;
+    width: 100%;
   }
 
   .menu_1 {
@@ -539,9 +544,16 @@ footer a {
   #article1 {
     width: 40em;
     margin: 0 0 0 4em;
+    height: 48em;
+  }
+  #title{
+    top: 55em;
+    left: 3em;
+    width: 630px
   }
   .hébergement {
     width: 40%;
+    height: 28%;
   }
   .picture_as {
     width: 14em;
@@ -587,9 +599,11 @@ footer a {
   }
   .box1 {
     order: 2;
+    
   }
   .box2 {
     order: 1;
+    height: 43em;
   }
   .box3 {
     order: 3;
@@ -739,12 +753,17 @@ footer a {
   }
   #article1 {
     width: 100%;
-    margin: 0 0 2em 0;
+    margin:0;
     background-color: white;
     height: auto;
   }
+  #title{
+    top: 51em;
+    right: 1.5em;
+    width: 250px;
+  }
   .box1 {
-    height: 100em;
+    height: 95em;
   }
   .hébergement {
     width: 85%;
