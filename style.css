@@ -761,6 +761,8 @@ footer a {
     top: 51em;
     right: 1.5em;
     width: 250px;
+    margin:0;
+    padding: 0;
   }
   .box1 {
     height: 95em;
